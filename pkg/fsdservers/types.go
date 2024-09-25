@@ -21,17 +21,17 @@ var (
 		Sweatbox:       false,
 	}
 
-	UKSweatbox = FSDServer{
+	PrimarySweatbox = FSDServer{
 		Identifier:     "SWEATBOX",
-		Hostname:       "209.97.133.228",
-		Location:       "London, UK",
+		Hostname:       "165.227.98.205",
+		Location:       "New York, USA",
 		Name:           "SWEATBOX",
 		ConnectableInt: 1,
 		Connectable:    true,
 		Sweatbox:       true,
 	}
 
-	USASweatbox = FSDServer{
+	SecondarySweatbox = FSDServer{
 		Identifier:     "SWEATBOX-2",
 		Hostname:       "45.55.54.56",
 		Location:       "New York, USA",
@@ -43,8 +43,8 @@ var (
 
 	AllServers = []FSDServer{
 		Automatic,
-		UKSweatbox,
-		USASweatbox,
+		PrimarySweatbox,
+		SecondarySweatbox,
 	}
 
 	LiveServers = []FSDServer{
@@ -52,7 +52,7 @@ var (
 	}
 
 	SweatboxServers = []FSDServer{
-		UKSweatbox,
-		USASweatbox,
+		PrimarySweatbox,
+		SecondarySweatbox,
 	}
 )
